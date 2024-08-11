@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="leedonglee">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>leedonglee</title>
-  <link rel="manifest" href="manifest.json">
-</head>
-<body>
-  <script src="flutter_bootstrap.js" async></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link href="css/base.css" type="text/css" media="all" rel="stylesheet" />
+        <link href="css/leedonglee.css" type="text/css" media="all" rel="stylesheet" />
+        <!-- SCRIPTS -->
+        <script src="scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="scripts/leedonglee.js" type="text/javascript"></script>
+        <title>LEEDONGLEE</title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="wrap">
+                <a href="">leedonglee.github.io</a>
+            </div>
+        </div>
+        <div id="container">
+            <div class="wrap">
+                <div class="name">이동현</div>
+                <div class="date">최근 수정 시각: 2024-08-11 22:23:13</div>
+                <div class="main">
+                    <div class="profile">
+                        Profile
+                    </div>
+                    <div class="index">
+                        <div class="start">목차</div>
+                        <div class="items">
+                            <div>
+                                <a href="#content-1">1</a>
+                                <span>개요</span>
+                            </div>
+                            <div class="sub">
+                                <a href="">1.1</a>
+                                <span>개요</span>
+                            </div>
+                            <div>
+                                <a href="">2</a>
+                                <span>개요</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-1" class="content">
+                    <div class="head">
+                        <a class="toggle">
+                            <img src="res/icons/keyboard_arrow_down_24dp_666.svg" width="32px" height="32px" />
+                            <span class="index">1</span>
+                        </a>
+                        <span class="title">개요</span>
+                    </div>
+                    <div class="body">
+                        대한민국의 前 야구 선수이자 현 SPOTV 해설위원. 선수 시절 포지션은 투수.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="wrap">
+                Footer
+            </div>
+        </div>
+    </body>
 </html>
