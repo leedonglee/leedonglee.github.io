@@ -1,5 +1,5 @@
 :root {
-	--bg-color: #F5F5F5;
+	--bg-color: #010B13;
 	--border-color: #CCCCCC;
 	--main-color: #010B13;
 	--secondary-color: #0275D8;
@@ -20,6 +20,11 @@ body {
 
 .wrap {
 	width: 1032px;
+}
+
+.docs {
+	width: 20px;
+	vertical-align: text-bottom;
 }
 
 .link {
@@ -64,7 +69,8 @@ body {
 /* Container */
 
 #container {
-	margin: 16px 0px;
+	padding: 16px 0px;
+	background-color: #F5F5F5;
 }
 
 #container .wrap {
@@ -90,7 +96,7 @@ body {
 
 #container .wrap .main {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	justify-content: space-between;
 	margin-top: 24px;
 }
@@ -112,7 +118,10 @@ body {
 }
 
 #container .wrap .main .profile .profile-image .profile-image-content {
-	background-color: gray;
+	background: url('../res/profile/profile.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 60%;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -232,6 +241,7 @@ body {
 #container .wrap .content .content-head .toggle {
 	display: flex;
 	align-items: center;
+	cursor: pointer;
 }
 
 #container .wrap .content .content-head a, #container .wrap .content .content-head a:visited {
@@ -252,8 +262,15 @@ body {
 	font-size: 15px;
 }
 
-#container .wrap .content .content-head .toggle {
-	cursor: pointer;
+#container .wrap .content .content-head .toggle img {
+	margin-right: 4px;
+	width: 30px;
+	height: 30px;
+}
+
+#container .wrap .content .content-head.index-sub .toggle img {
+	width: 26px;
+	height: 26px;
 }
 
 /* Container - Content (Hidden) */
@@ -279,7 +296,7 @@ body {
 
 @media (max-width: 980px) {
 	#container .wrap .main {
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: start;
 		margin-top: 24px;
