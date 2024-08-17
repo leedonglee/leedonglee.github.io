@@ -1,7 +1,16 @@
+:root {
+	--bg-color: #F5F5F5;
+	--border-color: #CCCCCC;
+	--main-color: #010B13;
+	--secondary-color: #0275D8;
+	--text-color: #000000;
+}
+
 /* Common */
 
 body {
-	background-color: #F5F5F5;
+	background-color: var(--bg-color);
+	color: var(--text-color);
 }
 
 #header, #container, #footer {
@@ -13,16 +22,21 @@ body {
 	width: 1032px;
 }
 
+.link {
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+
 /* Header */
 
 #header {
-	height: 56px;
-	background-color: #010B13;
+	background-color: var(--main-color);
 }
 
-#header .wrap {
+#header .wrap a {
 	display: flex;
 	align-items: center;
+	height: 56px;
 }
 
 #header a, #header a:visited {
@@ -35,12 +49,16 @@ body {
 #footer {
 	height: 107px;
 	background-color: #FFFFFF;
-	border-top: 1px solid #CCCCCC;
+	border-top: 1px solid var(--border-color);
 }
 
 #footer .wrap {
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+	color: #666666;
+	text-align: center;
 }
 
 /* Container */
@@ -52,9 +70,8 @@ body {
 #container .wrap {
 	padding: 24px;
 	background-color: #FFFFFF;
-	border: 1px solid #CCCCCC;
+	border: 1px solid var(--border-color);
 	border-radius: 6px;
-	color: #010B13;
 }
 
 #container .wrap .name {
@@ -66,7 +83,7 @@ body {
 #container .wrap .date {
 	margin: 0.5rem 0 0;
 	font-size: 0.9rem;
-	color: #696969;
+	color: #666666;
 }
 
 /* Container - Main */
@@ -82,17 +99,100 @@ body {
 
 #container .wrap .main .profile {
 	width: 500px;
-	height: 500px;
-	border: 2px solid #010B13;
+	border: 2px solid var(--main-color);
+	font-size: 15px;
+}
+
+/* Container - Main - Profile - Profile Image */
+
+#container .wrap .main .profile .profile-image {
+	width: 100%;
+	padding-bottom: 100%;
+	position: relative;
+}
+
+#container .wrap .main .profile .profile-image .profile-image-content {
+	background-color: gray;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+/* Container - Main - Profile - Contents */
+
+#container .wrap .main .profile table {
+	width: 100%;
+}
+
+#container .wrap .main .profile table th, #container .wrap .main .profile table td {
+	padding: 5px 10px;
+}
+
+#container .wrap .main .profile table th {
+	text-align: center;
+	background-color: var(--main-color);
+	color: #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+#container .wrap .main .profile table td {
+	width: 75%;
+	color: var(--text-color);
+	border-bottom: 1px solid var(--border-color);
+}
+
+#container .wrap .main .profile table .profile-name {
+	background-color: #FFFFFF;
+	color: var(--text-color);
+	border-bottom: 1px solid var(--border-color);
+}
+
+#container .wrap .main .profile table tr:last-child th, #container .wrap .main .profile table tr:last-child td {
+	border-bottom: none;
+}
+
+#container .wrap .main .profile table th a {
+	cursor: pointer;
+	user-select: none;
+	-ms-use-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+#container .wrap .main .profile table .links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px 10px;
+	align-items: center;
+}
+
+#container .wrap .main .profile table .links a {
+	display: inline-flex;
+}
+
+#container .wrap .main .profile table .links a img {
+	width: 21px;
+	min-width: 21px;
+	height: 21px;
+}
+
+#container .wrap .main .profile table:last-child {
+	border-top: 1px solid #FFFFFF;	
+}
+
+#container .wrap .main .profile table.hidden {
+	display: none;
 }
 
 /* Container - Main - Index */
 
 #container .wrap .main .index {
-	padding: 12px 20px 18px 14px;
+	padding: 14px 14px 0px 14px;
 	width: 364px;
 	height: fit-content;
-	border: 1px solid #CCCCCC;
+	border: 1px solid var(--border-color);
 }
 
 #container .wrap .main .index .start {
@@ -106,108 +206,93 @@ body {
 
 #container .wrap .main .index .items a, #container .wrap .main .index .items a:visited {
 	text-decoration: none;
-	color: #0275D8;
+	color: var(--secondary-color);
 }
 
 #container .wrap .main .index .items a::after {
 	content: '.';
-	
 }
 
-#container .wrap .main .index .items .sub {
+#container .wrap .main .index .items .index-sub {
 	margin-left: 20px;
 }
 
 /* Container - Content */
 
-#container .wrap .content .head {
+#container .wrap .content .content-head {
 	display: flex;
 	align-items: center;
 	margin: 1.2em 0 0.6em;
 	padding-bottom: 8px;
 	font-size: 1.6em;
 	font-weight: bold;
-	border-bottom: 1px solid #CCCCCC;
+	border-bottom: 1px solid var(--border-color);
 }
 
-#container .wrap .content .head .toggle {
+#container .wrap .content .content-head .toggle {
 	display: flex;
 	align-items: center;
 }
 
-#container .wrap .content .head a, #container .wrap .content .head a:visited {
+#container .wrap .content .content-head a, #container .wrap .content .content-head a:visited {
 	text-decoration: none;
-	color: #0275D8;
+	color: var(--secondary-color);
 }
 
-#container .wrap .content .head .index::after {
+#container .wrap .content .content-head .index::after {
 	content: '.';
 	margin-right: 8px;
 }
 
-#container .wrap .content .body {
+#container .wrap .content .content-head.index-sub {
+	font-size: 1.4em;
+}
+
+#container .wrap .content .content-body {
 	font-size: 15px;
 }
 
-#container .wrap .content .head .toggle {
+#container .wrap .content .content-head .toggle {
 	cursor: pointer;
 }
 
 /* Container - Content (Hidden) */
 
-#container .wrap .hidden .head {
+#container .wrap .hidden .content-head {
 	opacity: 0.5;
 }
 
-#container .wrap .hidden .head .toggle img {
+#container .wrap .hidden .content-head .toggle img {
 	transform: rotate(-90deg);
 }
 
-#container .wrap .hidden .body {
+#container .wrap .hidden .content-body {
 	display: none;
 }
 
-
-
-
-
-/*
-
-#container {
-	background-color: #DFE4EA;
-}
-
-#footer {
-	height: 120px;
-	background-color: #FFFFFF;
-}
-
-.wrap {
-	margin: 40px;
-	width: 1280px;
-}
-
-#container .wrap {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	padding: 40px;
-	background-color: #FFFFFF;
-	border: 1px solid #CED6E0;
-}
-
-@media (max-width: 1220px) {
-	
-}
-
-@media (max-width: 680px) {
+@media (max-width: 1100px) {
 	.wrap {
-		margin: 20px;
+		margin: 0px 16px;
 		width: 100%;
 	}
+}
 
-	#container .wrap {
-		margin: 20px;
-		padding: 20px;
+@media (max-width: 980px) {
+	#container .wrap .main {
+		flex-direction: column;
+		align-items: center;
+		justify-content: start;
+		margin-top: 24px;
+	}
+
+	#container .wrap .main .index {
+		margin-top: 24px;
+		width: 500px;
 	}
 }
-*/
+
+@media (max-width: 600px) {
+	#container .wrap .main .profile, #container .wrap .main .index {
+		width: 100%;
+	}
+}
