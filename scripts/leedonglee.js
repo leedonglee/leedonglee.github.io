@@ -36,9 +36,9 @@ function init() {
         }
     }
 
-    if ($('#container .wrap .main .profile table th a').length) {
-        $('#container .wrap .main .profile table th a').click(function() {
-            var element = $('#container .wrap .main .profile .profile-more-info');
+    if ($('#info table th a').length) {
+        $('#info table th a').click(function() {
+            var element = $('#info .more-info');
             element.toggleClass('hidden');
         });
     }
