@@ -25,7 +25,7 @@
             <div class="wrap">
                 <div id="page">
                     <h1>유니티 개발자 - 이동현</h1>
-                    <h2>최근 수정 시각: 2024-08-00 00:00:00</h2>
+                    <h2>최근 수정 시각: 2024-08-24 14:00:00</h2>
                 </div>
                 <div id="main">
 
@@ -48,49 +48,49 @@
 
                             <div>
                                 <a href="#content-3">3</a>
-                                <span>기술 스택</span>
-                            </div>
-
-                            <div>
-                                <a href="#content-4">4</a>
-                                <span>출시 프로젝트</span>
+                                <span>사이드 프로젝트</span>
                             </div>
                             <div class="index-sub">
-                                <a href="#content-4-1">4.1</a>
-                                <span>캔디 메이커 : 드롭 & 머지</span>
+                                <a href="#content-3-1">3.1</a>
+                                <span>캔디 메이커</span>
                             </div>
                             <div class="index-sub">
-                                <a href="#content-4-2">4.2</a>
+                                <a href="#content-3-2">3.2</a>
                                 <span>스나이퍼 로드</span>
                             </div>
                             <div class="index-sub">
-                                <a href="#content-4-3">4.3</a>
+                                <a href="#content-3-3">3.3</a>
                                 <span>네크로맨서 : 윈터</span>
                             </div>
 
                             <div>
-                                <a href="#content-5">5</a>
+                                <a href="#content-4">4</a>
                                 <span>토이 프로젝트</span>
                             </div>
                             <div class="index-sub">
-                                <a href="#content-5-1">5.1</a>
+                                <a href="#content-4-1">4.1</a>
                                 <span>TPS 샘플</span>
                             </div>
                             <div class="index-sub">
-                                <a href="#content-5-2">5.2</a>
+                                <a href="#content-4-2">4.2</a>
                                 <span>머니 러쉬</span>
                             </div>
                             <div class="index-sub">
-                                <a href="#content-5-3">5.3</a>
+                                <a href="#content-4-3">4.3</a>
                                 <span>블록 브레이커</span>
                             </div>
                             <div class="index-sub">
-                                <a href="#content-5-4">5.4</a>
+                                <a href="#content-4-4">4.4</a>
                                 <span>좀비 어택</span>
                             </div>
                             <div class="index-sub">
-                                <a href="#content-5-5">5.5</a>
+                                <a href="#content-4-5">4.5</a>
                                 <span>머지 게임</span>
+                            </div>
+
+                            <div>
+                                <a href="#content-5">5</a>
+                                <span>기술 스택</span>
                             </div>
                         </div>
                     </div>
@@ -112,7 +112,23 @@
                             </tr>
                             <tr>
                                 <th rowspan="2">출생</th>
-                                <td>1995년 4월 11일 (29세)</td>
+                                <td>1995년 4월 11일 (<span id="age"></span>세)</td>
+
+                                <script>
+                                    function calculateAge(date) {
+                                        let today = new Date();
+                                        let birthDate = new Date(date);
+                                        let age = today.getFullYear() - birthDate.getFullYear();
+
+                                        if (today.getMonth() < birthDate.getMonth()) {
+                                            age--;
+                                        }
+
+                                        return age;
+                                    }
+
+                                    document.getElementById('age').textContent = calculateAge('1995-04-11');
+                                </script>
                             </tr>
                             <tr>
                                 <td>서울특별시</td>
@@ -213,7 +229,7 @@
                         <span>경력</span><span class="period">(총 2년 8개월)</span>
                     </div>
                     <div class="content-body">
-                        저는 3년차 유니티 개발자로, 교육회사에서 학습 애플리케이션 개발과 유지보수를 담당해 왔습니다. 이 과정에서 다양한 유니티 관련 라이브러리를 활용할 기회를 많이 얻었으며, 이를 통해 기술 스택의 폭을 넓히며 개발 역량을 크게 향상시킬 수 있었습니다. 직접 개발한 게임을 Steam, Apple App Store, Google Play Store에 성공적으로 출시한 경험도 가지고 있습니다. 게임, 교육, 메타버스 등 다양한 산업 분야에서 유니티 개발 업무 수행이 가능합니다.
+                        저는 3년차 유니티 개발자로, 교육회사에서 학습 애플리케이션 개발과 유지보수를 담당해 왔습니다. 이 과정에서 다양한 유니티 관련 라이브러리를 활용할 기회를 많이 얻었으며, 이를 통해 기술 스택의 폭을 넓히며 개발 역량을 크게 향상시킬 수 있었습니다. 직접 개발한 게임을 Steam, App Store, Play Store에 성공적으로 출시한 경험도 가지고 있습니다. 게임, 교육, 메타버스 등 다양한 산업 분야에서 유니티 개발 업무 수행이 가능합니다.
                     </div>
                 </div>
 
@@ -230,11 +246,143 @@
                     </div>
                 </div>
 
+                
+
                 <div id="content-3">
                     <div class="content-head">
                         <a class="toggle">
                             <img src="../res/common/arrow_down.png" />
                             <span>3</span>
+                        </a>
+                        <span>사이드 프로젝트</span>
+                    </div>
+                    <div class="content-body">
+                        유니티 엔진으로 개발 후 <a class="link" href="" target="_blank" rel="noopener noreferrer">Steam</a>, <a class="link" href="" target="_blank" rel="noopener noreferrer">App Store</a>, <a class="link" href="" target="_blank" rel="noopener noreferrer">Google Play</a>에 출시한 게임 목록.
+                    </div>
+                </div>
+
+                <div id="content-3-1">
+                    <div class="content-head">
+                        <a class="toggle">
+                            <img src="../res/common/arrow_down.png" />
+                            <span>3.1</span>
+                        </a>
+                        <span>캔디 메이커</span>
+                    </div>
+                    <div class="content-body">
+                        <img class="icon" src="../res/common/docs.svg"> 자세한 내용은 <a class="link" href="project_candymaker.html" target="_blank" rel="noopener noreferrer">이동현/프로젝트/캔디 메이커</a> 문서를 참고하십시오.
+                    </div>
+                </div>
+
+                <div id="content-3-2">
+                    <div class="content-head">
+                        <a class="toggle">
+                            <img src="../res/common/arrow_down.png" />
+                            <span>3.2</span>
+                        </a>
+                        <span>스나이퍼 로드</span>
+                    </div>
+                    <div class="content-body">
+                        <img class="icon" src="../res/common/docs.svg"> 자세한 내용은 <a class="link" href="project_sniperroad.html" target="_blank" rel="noopener noreferrer">이동현/프로젝트/스나이퍼 로드</a> 문서를 참고하십시오.
+                    </div>
+                </div>
+
+                <div id="content-3-3">
+                    <div class="content-head">
+                        <a class="toggle">
+                            <img src="../res/common/arrow_down.png" />
+                            <span>3.3</span>
+                        </a>
+                        <span>네크로맨서 : 윈터</span>
+                    </div>
+                    <div class="content-body">
+                        <img class="icon" src="../res/common/docs.svg"> 자세한 내용은 <a class="link" href="project_necromancerwinter.html" target="_blank" rel="noopener noreferrer">이동현/프로젝트/네크로맨서 : 윈터</a> 문서를 참고하십시오.
+                    </div>
+                </div>
+
+                <div id="content-4">
+                    <div class="content-head">
+                        <a class="toggle">
+                            <img src="../res/common/arrow_down.png" />
+                            <span>4</span>
+                        </a>
+                        <span>토이 프로젝트</span>
+                    </div>
+                    <div class="content-body">
+                        유니티 엔진으로 개발 후 <a class="link" href="https://github.com/leedonglee" target="_blank" rel="noopener noreferrer">GitHub</a>에 업로드한 프로젝트 목록.
+                    </div>
+                </div>
+
+                <div id="content-4-1">
+                    <div class="content-head">
+                        <a class="toggle">
+                            <img src="../res/common/arrow_down.png" />
+                            <span>4.1</span>
+                        </a>
+                        <span>TPS 샘플</span>
+                    </div>
+                    <div class="content-body">
+                        <img class="icon" src="../res/common/github.svg"> 자세한 내용은 <a class="link" href="https://github.com/leedonglee/TPSSample" target="_blank" rel="noopener noreferrer">GitHub/leedonglee/TPSSample</a> 문서를 참고하십시오.
+                    </div>
+                </div>
+
+                <div id="content-4-2">
+                    <div class="content-head">
+                        <a class="toggle">
+                            <img src="../res/common/arrow_down.png" />
+                            <span>4.2</span>
+                        </a>
+                        <span>머니 러쉬</span>
+                    </div>
+                    <div class="content-body">
+                        <img class="icon" src="../res/common/github.svg"> 자세한 내용은 <a class="link" href="https://github.com/leedonglee/MoneyRush" target="_blank" rel="noopener noreferrer">GitHub/leedonglee/MoneyRush</a> 문서를 참고하십시오.
+                    </div>
+                </div>
+
+                <div id="content-4-3">
+                    <div class="content-head">
+                        <a class="toggle">
+                            <img src="../res/common/arrow_down.png" />
+                            <span>4.3</span>
+                        </a>
+                        <span>블록 브레이커</span>
+                    </div>
+                    <div class="content-body">
+                        <img class="icon" src="../res/common/github.svg"> 자세한 내용은 <a class="link" href="https://github.com/leedonglee/BlockBreaker" target="_blank" rel="noopener noreferrer">GitHub/leedonglee/BlockBreaker</a> 문서를 참고하십시오.
+                    </div>
+                </div>
+
+                <div id="content-4-4">
+                    <div class="content-head">
+                        <a class="toggle">
+                            <img src="../res/common/arrow_down.png" />
+                            <span>4.4</span>
+                        </a>
+                        <span>좀비 어택</span>
+                    </div>
+                    <div class="content-body">
+                        <img class="icon" src="../res/common/github.svg"> 자세한 내용은 <a class="link" href="https://github.com/leedonglee/ZombieAttack" target="_blank" rel="noopener noreferrer">GitHub/leedonglee/ZombieAttack</a> 문서를 참고하십시오.
+                    </div>
+                </div>
+
+                <div id="content-4-5">
+                    <div class="content-head">
+                        <a class="toggle">
+                            <img src="../res/common/arrow_down.png" />
+                            <span>4.5</span>
+                        </a>
+                        <span>머지 게임</span>
+                    </div>
+                    <div class="content-body">
+                        <img class="icon" src="../res/common/github.svg"> 자세한 내용은 <a class="link" href="https://github.com/leedonglee/MergeGame" target="_blank" rel="noopener noreferrer">GitHub/leedonglee/MergeGame</a> 문서를 참고하십시오.
+                    </div>
+                </div>
+
+                <div id="content-5">
+                    <div class="content-head">
+                        <a class="toggle">
+                            <img src="../res/common/arrow_down.png" />
+                            <span>5</span>
                         </a>
                         <span>기술 스택</span>
                     </div>
@@ -265,135 +413,6 @@
                     </div>
                 </div>
 
-                <div id="content-4">
-                    <div class="content-head">
-                        <a class="toggle">
-                            <img src="../res/common/arrow_down.png" />
-                            <span>4</span>
-                        </a>
-                        <span>출시 프로젝트</span>
-                    </div>
-                    <div class="content-body">
-                        유니티 엔진으로 개발 후 <a class="link" href="" target="_blank" rel="noopener noreferrer">Steam</a>, <a class="link" href="" target="_blank" rel="noopener noreferrer">Apple App Store</a>, <a class="link" href="" target="_blank" rel="noopener noreferrer">Google Play Store</a>에 출시한 게임 목록.
-                    </div>
-                </div>
-
-                <div id="content-4-1">
-                    <div class="content-head">
-                        <a class="toggle">
-                            <img src="../res/common/arrow_down.png" />
-                            <span>4.1</span>
-                        </a>
-                        <span>캔디 메이커 : 드롭 & 머지</span>
-                    </div>
-                    <div class="content-body">
-                        <!--<img class="icon" src="../res/common/docs.svg"> 자세한 내용은 <a class="link" href="career_creverse.html" target="_blank" rel="noopener noreferrer">이동현/프로젝트/캔디 메이커 : 드롭 & 머지</a> 문서를 참고하십시오.-->
-                    </div>
-                </div>
-
-                <div id="content-4-2">
-                    <div class="content-head">
-                        <a class="toggle">
-                            <img src="../res/common/arrow_down.png" />
-                            <span>4.2</span>
-                        </a>
-                        <span>스나이퍼 로드</span>
-                    </div>
-                    <div class="content-body">
-                        <img class="icon" src="../res/common/docs.svg"> 자세한 내용은 <a class="link" href="project_sniperroad.html" target="_blank" rel="noopener noreferrer">이동현/프로젝트/스나이퍼 로드</a> 문서를 참고하십시오.
-                    </div>
-                </div>
-
-                <div id="content-4-3">
-                    <div class="content-head">
-                        <a class="toggle">
-                            <img src="../res/common/arrow_down.png" />
-                            <span>4.3</span>
-                        </a>
-                        <span>네크로맨서 : 윈터</span>
-                    </div>
-                    <div class="content-body">
-                        <!--<img class="icon" src="../res/common/docs.svg"> 자세한 내용은 <a class="link" href="career_creverse.html" target="_blank" rel="noopener noreferrer">이동현/프로젝트/네크로맨서 : 윈터</a> 문서를 참고하십시오.-->
-                    </div>
-                </div>
-
-                <div id="content-5">
-                    <div class="content-head">
-                        <a class="toggle">
-                            <img src="../res/common/arrow_down.png" />
-                            <span>5</span>
-                        </a>
-                        <span>토이 프로젝트</span>
-                    </div>
-                    <div class="content-body">
-                        유니티 엔진으로 개발 후 <a class="link" href="https://github.com/leedonglee" target="_blank" rel="noopener noreferrer">GitHub</a>에 업로드한 프로젝트 목록.
-                    </div>
-                </div>
-
-                <div id="content-5-1">
-                    <div class="content-head">
-                        <a class="toggle">
-                            <img src="../res/common/arrow_down.png" />
-                            <span>5.1</span>
-                        </a>
-                        <span>TPS 샘플</span>
-                    </div>
-                    <div class="content-body">
-                        <img class="icon" src="../res/common/github.svg"> 자세한 내용은 <a class="link" href="https://github.com/leedonglee/TPSSample" target="_blank" rel="noopener noreferrer">GitHub/leedonglee/TPSSample</a> 문서를 참고하십시오.
-                    </div>
-                </div>
-
-                <div id="content-5-2">
-                    <div class="content-head">
-                        <a class="toggle">
-                            <img src="../res/common/arrow_down.png" />
-                            <span>5.2</span>
-                        </a>
-                        <span>머니 러쉬</span>
-                    </div>
-                    <div class="content-body">
-                        <img class="icon" src="../res/common/github.svg"> 자세한 내용은 <a class="link" href="https://github.com/leedonglee/MoneyRush" target="_blank" rel="noopener noreferrer">GitHub/leedonglee/MoneyRush</a> 문서를 참고하십시오.
-                    </div>
-                </div>
-
-                <div id="content-5-3">
-                    <div class="content-head">
-                        <a class="toggle">
-                            <img src="../res/common/arrow_down.png" />
-                            <span>5.3</span>
-                        </a>
-                        <span>블록 브레이커</span>
-                    </div>
-                    <div class="content-body">
-                        <img class="icon" src="../res/common/github.svg"> 자세한 내용은 <a class="link" href="https://github.com/leedonglee/BlockBreaker" target="_blank" rel="noopener noreferrer">GitHub/leedonglee/BlockBreaker</a> 문서를 참고하십시오.
-                    </div>
-                </div>
-
-                <div id="content-5-4">
-                    <div class="content-head">
-                        <a class="toggle">
-                            <img src="../res/common/arrow_down.png" />
-                            <span>5.4</span>
-                        </a>
-                        <span>좀비 어택</span>
-                    </div>
-                    <div class="content-body">
-                        <img class="icon" src="../res/common/github.svg"> 자세한 내용은 <a class="link" href="https://github.com/leedonglee/ZombieAttack" target="_blank" rel="noopener noreferrer">GitHub/leedonglee/ZombieAttack</a> 문서를 참고하십시오.
-                    </div>
-                </div>
-
-                <div id="content-5-5">
-                    <div class="content-head">
-                        <a class="toggle">
-                            <img src="../res/common/arrow_down.png" />
-                            <span>5.5</span>
-                        </a>
-                        <span>머지 게임</span>
-                    </div>
-                    <div class="content-body">
-                        <img class="icon" src="../res/common/github.svg"> 자세한 내용은 <a class="link" href="https://github.com/leedonglee/MergeGame" target="_blank" rel="noopener noreferrer">GitHub/leedonglee/MergeGame</a> 문서를 참고하십시오.
-                    </div>
-                </div>
             </div>
         </div>
         <div id="footer">
