@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import url(./template.css);
+
+:root {
+  --main: #F5F5F5;
+}
+
+/* Nav */
+
+nav .fixed-area {
+  padding: 20px;
+}
+
+nav button {
+  width: 100%;
+}
+
+.folders {
+  padding-top: 24px;    
+}
+
+.folders header {
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.folders button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 0 16px;
+  text-align: left;
+}
+
+.folders button .left {
+  display: flex;
+  align-items: center;
+}
+
+.folders button .left {
+  display: flex;
+  align-items: center;
+}
+
+.folders button .left::before {
+  display: inline-block;
+  margin-right: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #000;
+  content: ''
+}
+
+.folders button .right {
+  display: none;
+}
+
+.folders button:hover .right {
+  display: flex;
+}
