@@ -165,6 +165,18 @@
     "title": "정보보안",
     "questions": [
       {
+        "question": "라이와 메시가 개발한 pes를 개선한 알고리즘",
+        "answer": "IDEA"
+      },
+      {
+        "question": "국가 안전 보장국에서 개발한 암호화 알고리즘, 클리퍼 칩이라는 ic칩이 내장되어있음",
+        "answer": "Skipjack"
+      },
+      {
+        "question": "임시 키 무결성 프로토콜, 무선랜 보안에 사용된 WEP을 보완한 프토토콜",
+        "answer": "TKIP"
+      },
+      {
         "question": "대칭키 기반 블록 암호화 방식, DES에서 발전",
         "answer": "AES"
       },
